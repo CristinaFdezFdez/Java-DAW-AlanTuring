@@ -1,25 +1,29 @@
 package Tema4;
+
 import java.util.Scanner;
 
 /* Realiza un programa que resuelva una ecuación de segundo grado (del tipo ax^2 + bx + c = 0) */
 public class Ejercicio8 {
+
     public static void main(String[] args) {
+        double a;
+        double b;
+        double c;
         Scanner scanner = new Scanner(System.in);
+        try {
+            // Pedir al usuario los valores de a, b y c
+            System.out.println("Introduce el valor de a:");
+            a = scanner.nextDouble();
 
-        // Pedir al usuario los valores de a, b y c
-        System.out.println("Introduce el valor de a:");
-        double a = scanner.nextDouble();
+            System.out.println("Introduce el valor de b:");
+            b = scanner.nextDouble();
 
-        System.out.println("Introduce el valor de b:");
-        double b = scanner.nextDouble();
+            System.out.println("Introduce el valor de c:");
+            c = scanner.nextDouble();
 
-        System.out.println("Introduce el valor de c:");
-        double c = scanner.nextDouble();
-
-        // Cerrar el scanner
-        scanner.close();
-
-        // Comprobar si la ecuación es realmente de segundo grado
+            // Cerrar el scanner
+            scanner.close();
+             // Comprobar si la ecuación es realmente de segundo grado
         if (a == 0) {
             System.out.println("El valor de 'a' debe ser distinto de 0 para que sea una ecuación de segundo grado.");
         } else {
@@ -43,6 +47,10 @@ public class Ejercicio8 {
                 // No hay soluciones reales
                 System.out.println("La ecuación no tiene soluciones reales.");
             }
+        }
+
+        } catch (Exception e) {
+            System.out.println("ERROR: Párametros erróneos, deben ser números reales");
         }
     }
 }
