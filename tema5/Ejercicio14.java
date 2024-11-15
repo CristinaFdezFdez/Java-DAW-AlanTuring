@@ -19,6 +19,7 @@ public class Ejercicio14 {
         }
 
         int suma = 0;
+        
         for (int i = 1; i <= 100; i++) {
             suma += (numero + i);  // Sumar el número y los siguientes 100 números
         }
