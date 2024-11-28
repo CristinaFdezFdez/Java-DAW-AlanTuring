@@ -57,7 +57,7 @@ public class T05Tablero {
             System.out.println(bordesVerticales);
             // borde inferior
             System.out.println(bordesHorizontales);
-            sc.close();
         }
+        sc.close();
     }
 }
