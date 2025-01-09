@@ -261,6 +261,4 @@ public class MatLib {
                 System.out.println();
             }
     }
-
-
 }
