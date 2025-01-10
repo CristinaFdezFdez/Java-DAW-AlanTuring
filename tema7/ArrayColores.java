@@ -16,7 +16,7 @@ public class ArrayColores {
         System.out.println("Introduzca 8 palabras (pulse [INTRO] después de cada una):");
         String[] palabras = new String[8];
         for (int i = 0; i < 8; i++) {
-            palabras[i] = scanner.nextLine();
+            palabras[i] = scanner.nextLine().trim(); // Usamos trim para eliminar espacios adicionales
         }
 
         // Clasificar las palabras
@@ -37,7 +37,7 @@ public class ArrayColores {
         // Mostrar el array original
         System.out.println("\nArray original:");
         for (int i = 0; i < palabras.length; i++) {
-            System.out.printf("   %d %s\n", i, palabras[i]);
+            System.out.printf("   %d: %s\n", i, palabras[i]);
         }
 
         // Construir el array resultante
@@ -48,8 +48,7 @@ public class ArrayColores {
         // Mostrar el array resultante
         System.out.println("\nArray resultante:");
         for (int i = 0; i < arrayResultante.size(); i++) {
-            System.out.printf("   %d %s\n", i, arrayResultante.get(i));
+            System.out.printf("   %d: %s\n", i, arrayResultante.get(i));
         }
     }
 }
-
