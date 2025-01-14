@@ -8,7 +8,7 @@ public class TresEnRaya {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Inicializar el tablero con '░' para indicar casillas vacías
+        // Inicializar el tablero con '' para indicar casillas vacías
         inicializarTablero();
 
         // Mostrar el tablero inicial
@@ -84,7 +84,10 @@ public class TresEnRaya {
         }
         return false;
     }
-
+    /**
+     * 
+     * @return
+     */
     // Comprobar si el tablero está lleno
     public static boolean esTableroLleno() {
         for (int i = 0; i < 3; i++) {
@@ -121,8 +124,9 @@ public class TresEnRaya {
             }
         }
     }
-
+    
     // Movimiento del ordenador
+
     public static void ordenadorMovimiento() {
         Random rand = new Random();
         int fila, columna;
