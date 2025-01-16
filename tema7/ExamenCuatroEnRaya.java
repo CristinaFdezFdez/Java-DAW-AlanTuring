@@ -1,4 +1,4 @@
-package examen;
+package tema7;
 
 import java.util.Random;
 import java.util.Scanner;
